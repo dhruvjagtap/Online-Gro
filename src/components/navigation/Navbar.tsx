@@ -1,5 +1,5 @@
 "use client";
-import { ShoppingCart, Search, Menu } from "lucide-react";
+import { ShoppingCart, Search } from "lucide-react";
 // import SearchBar from "../ui/SearchBar";
 
 function SearchBar() {
