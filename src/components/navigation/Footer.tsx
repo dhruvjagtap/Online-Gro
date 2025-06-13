@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="bg-[#5a189a] text-white py-4">
@@ -6,17 +8,20 @@ export default function Footer() {
           &copy; {new Date().getFullYear()} My Website. All rights reserved.
         </p>
         <p>
-          <a href="/privacy-policy" className="text-white hover:text-blue-600">
+          <Link
+            href="/privacy-policy"
+            className="text-white hover:text-blue-600"
+          >
             Privacy Policy
-          </a>{" "}
+          </Link>{" "}
           |
-          <a
+          <Link
             href="/terms-of-service"
             className="text-white hover:text-blue-600"
           >
             {" "}
             Terms of Service
-          </a>
+          </Link>
         </p>
       </div>
     </footer>

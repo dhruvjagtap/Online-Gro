@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function SignIn() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen p-8 gap-8 font-[family-name:var(--font-geist-sans)]">
@@ -20,9 +22,9 @@ export default function SignIn() {
       </form>
       <p className="text-sm text-gray-500">
         Don&apos;t have an account?{" "}
-        <a href="/signup" className="text-blue-500 hover:underline">
+        <Link href="/signup" className="text-blue-500 hover:underline">
           Sign Up
-        </a>
+        </Link>
       </p>
     </div>
   );
