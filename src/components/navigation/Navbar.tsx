@@ -1,5 +1,6 @@
 "use client";
 import { ShoppingCart, Search } from "lucide-react";
+import Link from "next/link";
 // import SearchBar from "../ui/SearchBar";
 
 function SearchBar() {
@@ -21,45 +22,45 @@ export default function Navbar() {
       <nav className="bg-[#5a189a] px-4 py-3 shadow sticky top-0 z-50">
         {/* Desktop navbar */}
         <div className="hidden md:flex justify-evenly items-center">
-          <a href="/">
+          <Link href="/">
             <h1 className="text-2xl hover:text-blue-600 text-[#ffffff] italic font-semibold">
               OnlineGro
             </h1>
-          </a>
+          </Link>
 
           <SearchBar />
 
           <ul className="flex items-center space-x-4">
             <li>
-              <a href="/signin" className="hover:text-[#3a86ff] text-white">
+              <Link href="/signin" className="hover:text-[#3a86ff] text-white">
                 Sign In
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/cart">
+              <Link href="/cart">
                 <ShoppingCart className="h-6 w-6 text-white hover:text-blue-600" />
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
 
         {/* Mobile navbar */}
         <div className="flex justify-between items-center md:hidden">
-          <a href="/">
+          <Link href="/">
             <h1 className="text-2xl hover:text-blue-600 text-[#ffffff] italic font-semibold">
               OnlineGro
             </h1>
-          </a>
+          </Link>
           <ul className="flex items-center space-x-4">
             <li>
-              <a href="/signin" className="hover:text-[#6b5b95] text-white">
+              <Link href="/signin" className="hover:text-[#6b5b95] text-white">
                 Sign In
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/cart">
+              <Link href="/cart">
                 <ShoppingCart className="h-6 w-6 text-white hover:text-blue-600" />
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

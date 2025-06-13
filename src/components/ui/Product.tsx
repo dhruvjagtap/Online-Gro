@@ -8,7 +8,6 @@ interface ProductProps {
   description: string;
   images: string[];
   stock: number;
-  supplierLink?: string;
 }
 
 export default function ProductCard({
@@ -17,7 +16,6 @@ export default function ProductCard({
   description,
   images,
   stock,
-  supplierLink,
 }: ProductProps) {
   return (
     <div className="bg-white rounded-lg shadow p-4 max-w-sm mx-auto">
@@ -37,16 +35,6 @@ export default function ProductCard({
         <p className="text-sm text-green-600 mt-1">
           {stock > 0 ? `In Stock (${stock})` : "Out of Stock"}
         </p>
-        {supplierLink && (
-          <a
-            href={supplierLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-500 text-sm underline mt-2 inline-block"
-          >
-            View Supplier
-          </a>
-        )}
       </div>
     </div>
   );
